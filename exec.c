@@ -42,7 +42,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		{	opst[p].f(stack, counter);
 			return (0);
 		}
-		i++;
+		p++;
 	}
 	if (opet && opst[p].opcode == NULL)
 	{ fprintf(stderr, "L%d: unknown instruction %s\n", counter, opet);
